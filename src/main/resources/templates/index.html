@@ -1,0 +1,21 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:xsi="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr th:each="dolar:${dolares}">
+        <th th:text="${dolar.moneda}"></th>
+        <th th:text="${dolar.casa}"></th>
+        <th th:text="${dolar.nombre}"></th>
+        <th th:text="${dolar.compra}"></th>
+        <th th:text="${dolar.venta}"></th>
+        <th th:text="${dolar.fechaActualizacion}"></th>
+
+    </tr>
+
+</table>
+</body>
+</html>
